@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <title>Template</title>
+  </head>
+  <body class="bg-black font-montserrat">
+    <nav class="bg-black w-[120px] h-full fixed flex flex-col text-center">
+      <img src="assets/avatar_smoke.jpg" class="w-full" />
+      <a href="#" class="text-white p-6">
+        <i class="fa-solid fa-house text-4xl"></i>
+        <p>Home</p>
+      </a>
+      <a href="#about" class="text-white p-6">
+        <i class="fa-solid fa-address-card text-4xl"></i>
+        <p>About</p>
+      </a>
+      <a href="#photos" class="text-white p-6">
+        <i class="fa-regular fa-image text-4xl"></i>
+        <p>Photos</p>
+      </a>
+      <a href="#contact" class="text-white p-6">
+        <i class="fa-regular fa-envelope text-4xl"></i>
+        <p>Contact</p>
+      </a>
+    </nav>
+    <div class="ms-[120px] p-[32px] text-white">
+      <header class="container text-center">
+        <h1 class="text-6xl">I'm John Doe</h1>
+        <p class="mt-7">Photographer and Web Designer.</p>
+        <img src="assets/man_smoke.jpg " class="w-[992px] h-[1108px] mx-auto" />
+      </header>
+      <div class="ms-[162px] me-[162px]">
+        <h2 class="text-4xl" id="about">My Name</h2>
+        <div class="w-[200px] h-[2px] mt-2 bg-gray-400"></div>
+        <p class="text-gray-400 mt-4">
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <h2 class="text-3xl mt-24">My Skills</h2>
+        <p class="pt-12 text-gray-500">Photography</p>
+        <div class="bg-white w-full h-[28px] mt-3">
+          <div class="bg-gray-500 w-[95%] h-[28px]"></div>
+        </div>
+        <p class="pt-4 text-gray-500">web design</p>
+        <div class="bg-white w-full h-[28px] mt-3">
+          <div class="bg-gray-500 w-[85%] h-[28px]"></div>
+        </div>
+        <p class="pt-4 text-gray-500">photoshop</p>
+        <div class="bg-white w-full h-[28px] mt-3">
+          <div class="bg-gray-500 w-[65%] h-[28px]"></div>
+        </div>
+        <div class="w-full h-[122px] bg-white mt-7 grid grid-cols-4 text-black">
+          <div class="flex items-center justify-center flex-col">
+            <p>11+</p>
+            <p>partners</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <p>55+</p>
+            <p>projects done</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <p>89+</p>
+            <p>happy clients</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <p>150+</p>
+            <p>meeting</p>
+          </div>
+        </div>
+        <div class="bg-white w-[170px] h-[50px] mt-3 hover:bg-gray-300">
+          <button class="btn border-0 text-black pt-3 ps-3">
+            Download resume
+          </button>
+        </div>
+        <h3 class="text-2xl mt-16">My Price</h3>
+        <div class="prices-card grid grid-cols-2 w-full h-[500px] text-xl mt-5">
+          <div
+            class="flex items-center justify-between flex-col h-full text-black bg-white me-3 hover:bg-gray-100"
+          >
+            <p
+              class="bg-gray-300 w-full h-[70px] justify-around text-center pt-6"
+            >
+              basic
+            </p>
+            <p>web design</p>
+            <p>photography</p>
+            <p>5GB Storage</p>
+            <p>mail support</p>
+            <div class="pb-3">
+              <p class="text-center">10$</p>
+              <p>per month</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between flex-col text-black bg-white"
+          >
+            <p
+              class="bg-gray-300 w-full h-[70px] justify-around text-center pt-6"
+            >
+              basic
+            </p>
+            <p>web design</p>
+            <p>photography</p>
+            <p>5GB Storage</p>
+            <p>mail support</p>
+            <div class="pb-3">
+              <p class="text-center">10$</p>
+              <p>per month</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-2xl mt-16 mb-5">My reputation</h3>
+        <div class="reputation-section text-gray-300 flex flex-col">
+          <div class="grid-cols-2 flex flex-row">
+            <img src="assets/bandmember.jpg" class="rounded-full w-20 me-3" />
+            <div class="flex flex-col">
+              <div class="grid-cols-2 flex flex-row h-[40px]">
+                <p class="me-3">Chris Fox.</p>
+                <p>CEO at Mighty Schools.</p>
+              </div>
+              <p class="">John Doe saved us from a web disaster.</p>
+            </div>
+          </div>
+          <div class="grid-cols-2 flex flex-row mt-8">
+            <img src="assets/bandmember.jpg" class="rounded-full w-20 me-3" />
+            <div class="flex flex-col">
+              <div class="grid-cols-2 flex flex-row h-[40px]">
+                <p class="me-3">Chris Fox.</p>
+                <p>CEO at Mighty Schools.</p>
+              </div>
+              <p class="">John Doe saved us from a web disaster.</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-2xl mt-16 mb-5 w-full" id="photos">My photos</h3>
+        <div class="prices-card grid grid-cols-2 w-full h-auto mt-5">
+          <div class="flex items-center flex-col me-1">
+            <img class="mt-2" src="assets/wedding.jpg" />
+            <img class="mt-2" src="assets/rocks.jpg" />
+            <img class="mt-2" src="assets/sailboat.jpg" />
+          </div>
+          <div class="flex items-center flex-col me-1">
+            <img class="mt-2" src="assets/underwater.jpg" />
+            <img class="mt-2" src="assets/chef.jpg" />
+            <img class="mt-2" src="assets/wedding (1).jpg" />
+            <img class="mt-2 w-full" src="assets/p6.jpg" />
+          </div>
+        </div>
+        <h3 class="text-3xl mt-16 mb-5 w-full" id="contact">Contact Me</h3>
+        <div class="w-[200px] h-[2px] mt-2 bg-gray-400"></div>
+        <div class="flex flex-row pt-3">
+          <i class="fa-solid fa-location-dot text-white text-4xl"></i>
+          <p class="text-center pt-2 ps-5 text-gray-400">Chicago, US</p>
+        </div>
+        <div class="flex flex-row pt-3">
+          <i class="fa-solid fa-phone text-white text-4xl"></i>
+          <p class="text-center pt-2 ps-5 text-gray-400">Phone: +00 151515</p>
+        </div>
+        <div class="flex flex-row pt-3">
+          <i class="fa-solid fa-envelope text-white text-4xl"></i>
+          <p class="text-center pt-2 ps-5 text-gray-400">
+            Email: mail@mail.com
+          </p>
+        </div>
+        <p class="mt-10 text-gray-400">
+          Let's get in touch. Send me a message:
+        </p>
+        <form action="" class="text-black">
+          <p>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full ps-2 h-[50px] mt-3"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-full ps-2 h-[50px] mt-3"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full ps-2 h-[50px] mt-3"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              placeholder="message"
+              class="w-full ps-2 h-[50px] mt-3"
+              required
+              name="message"
+            />
+          </p>
+
+          <button
+            class="btn border-0 text-black bg-white w-[170px] h-[50px] mt-3 hover:bg-gray-300"
+          >
+            Download resume
+          </button>
+        </form>
+        <div class="flex flex-row pt-10 text-gray-400">
+          <i class="fa-brands fa-facebook pe-1"></i>
+          <i class="fa-brands fa-instagram pe-1"></i>
+          <i class="fa-brands fa-twitter pe-1"></i>
+          <i class="fa-brands fa-snapchat pe-1"></i>
+          <i class="fa-brands fa-pinterest pe-1"></i>
+          <i class="fa-brands fa-linkedin pe-1"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
